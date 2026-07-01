@@ -1,0 +1,42 @@
+backend:
+  name: github
+  repo: KKDavidd/Floophy
+  branch: main
+media_folder: "img"
+public_folder: "img"
+collections:
+  - name: "gallery_data"
+    label: "Gallery"
+    files:
+      - label: "Renders & Sketches"
+        name: "gallery"
+        file: "data/gallery.json"
+        fields:
+          - label: "Gallery Items"
+            name: "items"
+            widget: "list"
+            summary: "{{title}} - {{type}}"
+            collapsed: true
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Character Name", name: "title", widget: "string"}
+              - {label: "Type (e.g. Badge, Half-body, Full render)", name: "type", widget: "string"}
+              - {label: "Category", name: "category", widget: "select", options: [{label: "Render", value: "finished"}, {label: "Wireframe / Sketch", value: "sketch"}]}
+              - {label: "Featured slot (1-4)", name: "featured_order", widget: "select", options: [{label: "Not featured", value: "none"}, {label: "1.", value: "1"}, {label: "2.", value: "2"}, {label: "3.", value: "3"}, {label: "4.", value: "4"}], default: "none"}
+  - name: "waitlist_data"
+    label: "Queue"
+    files:
+      - label: "Clients"
+        name: "waitlist"
+        file: "data/waitlist.json"
+        fields:
+          - label: "Commissions"
+            name: "clients"
+            widget: "list"
+            required: false
+            summary: "{{name}} - {{status}}"
+            collapsed: true
+            fields:
+              - {label: "Client Name", name: "name", widget: "string"}
+              - {label: "Commission Type", name: "type", widget: "string"}
+              - {label: "Status", name: "status", widget: "select", options: [{label: "Waiting", value: "waiting"}, {label: "Sketching", value: "sketching"}, {label: "Rendering", value: "coloring"}, {label: "Done", value: "done"}], default: "waiting"}

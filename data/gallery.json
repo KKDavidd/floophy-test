@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "image": "/img/Cement.webp",
+      "title": "Minta Cement",
+      "type": "Andrássy Körút",
+      "category": "sketch",
+      "featured_order": "1"
+    },
+    {
+      "image": "/img/HHhcLyTWsAELXWx.jpg",
+      "title": "Minta Kávé",
+      "type": "Izébigyusz",
+      "category": "finished",
+      "featured_order": "2"
+    },
+    {
+      "image": "/img/HHUD224WYAA2qyJ.jpg",
+      "title": "SOAD",
+      "type": "Terrracotta Pie",
+      "category": "sketch",
+      "featured_order": "3"
+    },
+    {
+      "image": "/img/kisu.jpg",
+      "title": "Minta Smorch",
+      "type": "The best Type of em all",
+      "category": "finished",
+      "featured_order": "4"
+    }
+  ]
+}
