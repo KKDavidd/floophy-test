@@ -7,6 +7,7 @@ fetch('data/gallery.json')
             const div = document.createElement('div');
             div.className = 'gallery-item';
             div.innerHTML = `<img src="${item.image}" alt="${item.title}"><div class="overlay"><span>${item.title}</span><br><i>${item.type}</i></div>`;
+            if (item.nsfw) applyNSFW(div, true);
             if (item.category === 'finished') fGrid.appendChild(div);
             if (item.category === 'sketch') sGrid.appendChild(div);
         });

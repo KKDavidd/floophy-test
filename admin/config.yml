@@ -23,6 +23,7 @@ collections:
               - {label: "Type (e.g. Badge, Half-body, Full render)", name: "type", widget: "string"}
               - {label: "Category", name: "category", widget: "select", options: [{label: "Render", value: "finished"}, {label: "Wireframe / Sketch", value: "sketch"}]}
               - {label: "Featured slot (1-4)", name: "featured_order", widget: "select", options: [{label: "Not featured", value: "none"}, {label: "1.", value: "1"}, {label: "2.", value: "2"}, {label: "3.", value: "3"}, {label: "4.", value: "4"}], default: "none"}
+              - {label: "NSFW", name: "nsfw", widget: "boolean", default: false, hint: "Ha be van pipálva, a kép erősen blur-ölve jelenik meg, amíg a látogató nem erősíti meg, hogy elmúlt 18 éves."}
   - name: "waitlist_data"
     label: "Queue"
     files:

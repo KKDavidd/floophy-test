@@ -10,6 +10,7 @@ fetch('data/gallery.json')
                 a.href = 'gallery.html';
                 a.className = 'gallery-item';
                 a.innerHTML = `<img src="${foundItem.image}" alt="${foundItem.title}"><div class="overlay"><span>${foundItem.title}</span></div>`;
+                if (foundItem.nsfw) applyNSFW(a, true);
                 grid.appendChild(a);
             }
         });

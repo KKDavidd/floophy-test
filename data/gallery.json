@@ -3,30 +3,34 @@
     {
       "image": "/img/Cement.webp",
       "title": "Minta Cement",
-      "type": "Andrássy Körút",
+      "type": "Andr\u00e1ssy K\u00f6r\u00fat",
       "category": "sketch",
-      "featured_order": "1"
+      "featured_order": "1",
+      "nsfw": false
     },
     {
       "image": "/img/HHhcLyTWsAELXWx.jpg",
-      "title": "Minta Kávé",
-      "type": "Izébigyusz",
+      "title": "Minta K\u00e1v\u00e9",
+      "type": "Iz\u00e9bigyusz",
       "category": "finished",
-      "featured_order": "2"
+      "featured_order": "2",
+      "nsfw": false
     },
     {
       "image": "/img/HHUD224WYAA2qyJ.jpg",
       "title": "SOAD",
       "type": "Terrracotta Pie",
       "category": "sketch",
-      "featured_order": "3"
+      "featured_order": "3",
+      "nsfw": false
     },
     {
       "image": "/img/kisu.jpg",
       "title": "Minta Smorch",
       "type": "The best Type of em all",
       "category": "finished",
-      "featured_order": "4"
+      "featured_order": "4",
+      "nsfw": false
     }
   ]
 }

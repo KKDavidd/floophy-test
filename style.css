@@ -380,6 +380,110 @@ section {
     opacity: 1;
 }
 
+/* NSFW blur + age gate */
+.nsfw-item img {
+    filter: blur(30px) saturate(0.5) brightness(0.65);
+    transform: scale(1.15);
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.nsfw-item:not(.nsfw-revealed) .overlay {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+.nsfw-item.nsfw-revealed img {
+    filter: none;
+    transform: none;
+}
+
+.nsfw-badge {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+    padding: 16px;
+    background: rgba(6, 18, 43, 0.35);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    z-index: 2;
+}
+
+.nsfw-badge i {
+    font-size: 1.3rem;
+    display: block;
+}
+
+.nsfw-item.nsfw-revealed .nsfw-badge {
+    display: none;
+}
+
+.age-gate-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(4, 10, 24, 0.85);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5000;
+    padding: 20px;
+}
+
+.age-gate-box {
+    background: var(--bg-page);
+    border: 1px solid var(--line-soft);
+    border-radius: 18px;
+    padding: 32px 28px;
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.age-gate-box i.bi-exclamation-triangle-fill {
+    font-size: 2rem;
+    color: #ffb03b;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.age-gate-box h3 {
+    color: var(--text-main);
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+}
+
+.age-gate-box p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 22px;
+    line-height: 1.5;
+}
+
+.age-gate-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.age-gate-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 18px;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    opacity: 0.75;
+}
+
 .process-list {
     display: flex;
     flex-direction: column;
@@ -664,6 +768,11 @@ footer {
 @media (max-width: 900px) {
     .mobile-menu-btn {
         display: block;
+        margin-left: auto;
+    }
+
+    .nav-actions {
+        display: none;
     }
 
     .nav-socials {
