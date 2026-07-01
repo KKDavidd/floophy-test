@@ -3,15 +3,15 @@
     {
       "image": "/img/Cement.webp",
       "title": "Minta Cement",
-      "type": "Andr\u00e1ssy K\u00f6r\u00fat",
+      "type": "Andrássy Körút",
       "category": "sketch",
       "featured_order": "1",
-      "nsfw": true
+      "nsfw": false
     },
     {
       "image": "/img/HHhcLyTWsAELXWx.jpg",
-      "title": "Minta K\u00e1v\u00e9",
-      "type": "Iz\u00e9bigyusz",
+      "title": "Minta Kávé",
+      "type": "Izébigyusz",
       "category": "finished",
       "featured_order": "2",
       "nsfw": false
