@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: KKDavidd/Floophy
+  repo: KKDavidd/floophy-test
   branch: main
 media_folder: "img"
 public_folder: "img"
